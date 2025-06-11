@@ -1,20 +1,16 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import EnhancedWebView from './components/EnhancedWebView';
+
+const WEB_URL = __DEV__
+    ? 'http://192.168.1.138:3001'  // Local Next.js (for testing)
+    : 'https://cond-vercel.vercel.app';  // Deployed Next.js
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <>
+            <StatusBar style="dark" />
+            <EnhancedWebView url={WEB_URL} />
+        </>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
