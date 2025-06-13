@@ -6,6 +6,8 @@ const WEB_URL = process.env.EXPO_PUBLIC_ENVIRONMENT === 'dev'
     ? 'http://192.168.1.138:3001'  // Local Next.js (for testing)
     : 'https://cond-vercel.vercel.app';  // Deployed Next.js
 
+console.log("Web URL:", WEB_URL);
+
 export default function App() {
     return (
         <>
