@@ -4,7 +4,7 @@
     "slug": "cond-mobile-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.jpeg",
     "userInterfaceStyle": "light",
     "assetBundlePatterns": [
       "**/*"
@@ -26,6 +26,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5fca609d-437b-4ce2-9b8a-6a9dba926cf3"
+      }
     }
   }
 }
