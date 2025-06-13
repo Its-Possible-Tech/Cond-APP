@@ -4,6 +4,8 @@
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
+    "start:prod": "expo start --no-dev",
+    "dev": "expo start --dev-client",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
